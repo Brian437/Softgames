@@ -4,8 +4,8 @@ body
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*background-color: lightgrey;*/
-	background-color: black;
+	background-color: white;
+	/*background-color: black;*/
 }
 #fire-image
 {

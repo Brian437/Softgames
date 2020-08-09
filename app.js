@@ -16,10 +16,10 @@ document.getElementById('display').appendChild(renderer.view);
 var stage=new PIXI.Container();
 
 PIXI.loader
-	.add("rat","images/orange.png")
+	.add("rat","images/rat.png")
 	.load(setup);
 
-var rat;
+// var rat;
 
 function setup(){
 	stage.interactive=true;
