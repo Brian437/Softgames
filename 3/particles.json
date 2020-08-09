@@ -1,7 +1,7 @@
 {
 	"particles":{
 		"number":{
-			"value":10,
+			"value":9,
 			"density":{
 				"enable":false,
 				"value_area":100
@@ -29,7 +29,7 @@
 			]
 		},
 		"shape":{
-			"type":"circle",
+			"type":"triangle",
 			"image":{
 				"src":"https://toppng.com/public/uploads/preview/white-person-icon-man-icon-white-115533950929ecczhfemw.png"
 			}
@@ -44,7 +44,7 @@
 			}
 		},
 		"size":{
-			"value":100,
+			"value":25,
 			"random":false,
 			"anim":{
 				"enable":true,
@@ -55,7 +55,7 @@
 			"enable":false,
 			"distance":120,
 			"color":"#ff8000",
-			"width":25,
+			"width":1,
 			"opacity":0.75
 		},
 		"move":{

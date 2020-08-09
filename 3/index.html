@@ -12,22 +12,60 @@
 	<meta http-equiv="X-UA-Compatible"
 	content="ie-edge">
 	<title>Flame Particles</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<div style="width: 400px;">
-		<div id="particles-js"></div>
-	</div>
+<style type="text/css">
+	body
+	{
 
+		height: 500px;
+		/*display: flex;*/
+		justify-content: center;
+		align-items: center;
+		/*background-color: lightgrey;*/
+		background-color: black;
+		
+		position: relative;
+	}
+	#fire-image
+	{
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+	}
+	#display>*{
+		border:1px dashed black;
+		background-color: black;
+		height: 400px;
+	}
+	#particles-js
+	{
+		position: relative;
+		height: 500px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 500px;
+	}
+
+
+</style>
+<body>
+	<div id="particles-js">
+		<img id='fire-image' src="images/fire.gif" />
+	</div>
 	<script 
 	src="particles.js"></script>
+	
 
 	 <script>
 	 	particlesJS.load('particles-js','particles.json',function(){
 			console.log('particles.json loaded.....');
 	 	});
-	 	document.getElementById("particles-js").style.backgroundColor="black";
-	 	document.getElementById("particles-js").width=400;
+	 	// document.getElementById("particles-js").style.backgroundColor="black";
+	 	// document.getElementById("particles-js").style.height="600px";
+	 	
+	 	// document.getElementById("particles-js").width=400;
 	 	// document.getElementById("particles-js").style.marginLeft="auto";
 	 	// document.getElementById("particles-js").style.marginRight="auto";
 	 	// document.getElementById("particles-js").style.display="block";

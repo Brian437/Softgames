@@ -1,9 +1,9 @@
 PIXI.utils.sayHello();
-const WIDTH=440;
-const HEIGHT=360;
+const WIDTH=750;
+const HEIGHT=500;
 const MENU_START_X=30;
 const MENU_START_Y=25;
-const MENU_DISTANCE=120;
+const MENU_DISTANCE=150;
 const MENU_TEXT=['Moving Cards','Random Text & image','Flame Particles'];
 
 var renderer=PIXI.autoDetectRenderer(WIDTH,HEIGHT, {
@@ -25,7 +25,7 @@ function setup(){
 	stage.interactive=true;
 	var menu=[];
 	var style = {
-	    font : 'bold italic 36px Arial',
+	    font : 'bold italic 48px Arial',
 	    fill : '#F7EDCA',
 	    stroke : '#4a1850',
 	    strokeThickness : 5,
@@ -43,7 +43,7 @@ function setup(){
 		menu[x].y = MENU_START_Y+x*MENU_DISTANCE;
 		menu[x].interactive=true;
 		menu[x].url="/"+(x+1);
-		menu[x].click=function(e){
+		menu[x].pointertap=function(e){
 			window.open(this.url,'_self');
 		}
 		stage.addChild(menu[x]);

@@ -5,9 +5,14 @@ body
 	justify-content: center;
 	align-items: center;
 	/*background-color: lightgrey;*/
+	background-color: black;
 }
-
+#fire-image
+{
+	width: 400px;
+}
 #display>*{
 	border:1px dashed black;
-	/*background-color: black;*/
+	background-color: black;
+	height: 400px;
 }

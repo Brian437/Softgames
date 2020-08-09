@@ -120,6 +120,8 @@ function animationLoop()
 					(card.targetY-card.startY)
 				)+card.startY;
 		}
+
+		
 		if(	
 			!card.faceFront &&
 			(x==(CARD_COUNT-1) || cards[x+1].faceFront) &&
