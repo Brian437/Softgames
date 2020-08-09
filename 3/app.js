@@ -27,7 +27,6 @@ function setup(){
 	rat.x=renderer.width/2;
 	rat.y=renderer.height/2;
 	rat.anchor.set(0.5,0.5);
-	// rat.pivot.set(200,0);
 
 	rat.click = function(){
 		rat.scale.x -=0.05;

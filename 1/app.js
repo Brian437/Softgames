@@ -1,7 +1,10 @@
-// include('./pixi.js');
+/*
+	Created by Brian Chaves
+	Created on August 07, 2020
+	Updated on August 09, 2020
+*/
 const START_X=25;
 const START_Y=50;
-// const SIZE=1000;
 const STAGE_HEIGHT=750;
 const STAGE_WIDTH=1000;
 const CARD_SIZE=200;
@@ -15,8 +18,6 @@ const NEXT_CARD_TIME=MILLISECONDS_PER_SECONDS*1;
 const FRAME_PER_SECONDS=60;
 const CARD_SPACE=0.25;
 const START_DELAY=MILLISECONDS_PER_SECONDS*2;
-
-// PIXI.utils.sayHello();
 
 var renderer=PIXI.autoDetectRenderer(STAGE_WIDTH,STAGE_HEIGHT, {
 	transparent:false,

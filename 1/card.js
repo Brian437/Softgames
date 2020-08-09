@@ -1,3 +1,10 @@
+/*
+	Card Class
+	Created by Brian Chaves
+	Created on August 07, 2020
+	Updated on August 07, 2020
+	This class is not used
+*/
 class Card 
 {
 	constructor()

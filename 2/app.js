@@ -1,3 +1,8 @@
+/*
+	Created by Brian Chaves
+	Created on August 09, 2020
+	Updated on August 09, 2020
+*/
 const HEIGHT=750;
 const WIDTH=1000;
 const TEXT=[
@@ -54,10 +59,8 @@ for(var x=0;x<IMAGE.length;x++)
 }
 
 PIXI.loader
-	// .add("rat","images/orange.png")
 	.load(setup);
 
-// var rat;
 var newSpriteTimer=setInterval(newSpriteTimerFunction,NEW_SPRITE_TIMER);
 var newX=START_X;
 var newY=START_Y;
