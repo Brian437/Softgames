@@ -1,0 +1,11 @@
+#particles-js
+{
+	/*background: firebrick;*/
+	background-color: black!important;
+	height:400px;
+	max-width: 800px;
+	width: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
