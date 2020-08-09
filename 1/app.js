@@ -107,11 +107,6 @@ function animationLoop()
 		}
 		else
 		{
-			if(!card.faceFront)
-			{
-				card.faceFront=true;
-				stage.addChild(card);
-			}
 			card.x=
 				(
 					(timeElapsed-card.startMove)/
@@ -125,7 +120,15 @@ function animationLoop()
 					(card.targetY-card.startY)
 				)+card.startY;
 		}
-	}
+		if(	
+			!card.faceFront &&
+			(x==(CARD_COUNT-1) || cards[x+1].faceFront) &&
+			timeElapsed>=card.startMove
+		){
+			card.faceFront=true;
+			stage.addChild(card);
+		}
+}
 	renderer.render(stage);
 }
 function displayStatus()
